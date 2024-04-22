@@ -1,0 +1,154 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+  
+background-color: #333333;
+box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.3);
+
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+header .mae {
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo h1 {
+    padding-left: 15px;
+    font-family: Arial, sans-serif; /* escolha a fonte desejada */
+    font-size: 18px; /* tamanho da fonte */
+    text-decoration: none; /* remover sublinhado do link */
+}
+
+.logo h1 a {
+    text-decoration: none; /* remover sublinhado do link */
+    color: rgba(255, 249, 249, 0.911); /* cor do link */
+}
+.logo h1 a:hover{
+
+}
+
+header img{
+  padding-top: 5px;
+  margin-left: 150px;
+  width:50px;
+  height: 50px;
+}
+.cabecalho{
+    padding-top: 10px;
+    justify-content: center;
+    align-items: center;
+}
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin-right: 10px;
+}
+
+nav ul li a {
+    font-size: 16px;
+    padding: 10px;
+    color: rgb(206, 203, 203);
+    text-decoration: none;
+    border-radius: 18px;
+}
+
+nav ul li a:hover {
+    background-color: rgba(204, 202, 202, 0.521);
+}
+
+.search-box {
+    margin-right: 50px;
+    margin-top: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.search-box input[type="text"] {
+    padding: 8px;
+    border-radius: 5px;
+    border: none;
+}
+
+.search-box button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 8px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 5px;
+}
+
+.search-box button:hover {
+    background-color: #45a049;
+}
+
+
+section{
+    margin-top: 50px;
+}
+
+
+
+
+.login-container {
+    margin: 0 auto;
+    background-color: #fff; /* Cor de fundo do container */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Sombra */
+    width: 300px;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333333d7;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    color: #333333d7;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff; /* Cor de fundo do botão */
+    color: #fff; /* Cor do texto do botão */
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3; /* Cor de fundo do botão ao passar o mouse */
+}
+
