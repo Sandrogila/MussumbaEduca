@@ -1,0 +1,154 @@
+/* styles/style.css */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #aaa6a615; /* Cor de fundo suave */
+}
+
+header {
+    background-color: #333;
+    box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.5);
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+}
+
+header .mae {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap; /* Permite quebra de linha em telas menores */
+}
+
+.logo h1 {
+    font-size: 1.5em;
+    text-decoration: none;
+}
+
+.logo h1 a {
+    text-decoration: none;
+    color: rgba(255, 249, 249, 0.911);
+}
+
+.cabecalho {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; /* Permite quebra de linha em telas menores */
+}
+
+nav ul li {
+    margin-right: 10px;
+}
+
+nav ul li a {
+    font-size: 1em;
+    padding: 10px;
+    color:rgb(255, 249, 249);
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    color: gray;
+}
+
+.search-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.search-box input[type="text"] {
+    padding: 8px;
+    border-radius: 5px;
+    border: none;
+}
+
+.search-box button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 8px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 5px;
+}
+
+.search-box button:hover {
+    background-color: #45a049;
+}
+
+.mobile-menu-icon {
+    display: none;
+    cursor: pointer;
+}
+
+.mobile-menu-icon button {
+    background-color: transparent;
+    border: none;
+    font-size: 1.5rem;
+    color: #fff;
+}
+
+.mobile-menu {
+    display: none;
+    background-color: #333333;
+    position: absolute;
+    top: 70px;
+    right: 0;
+    width: 100%;
+    text-align: center;
+    overflow-y: auto;
+    transition: all 0.3s ease-in-out;
+}
+
+.mobile-menu ul {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 1rem;
+}
+
+.mobile-menu ul li {
+    padding: 1.2rem 0;
+}
+
+/* Mobile Menu - Ativa quando a largura da tela é menor que 735px */
+@media screen and (max-width: 790px) {
+    .mobile-menu-icon {
+        display: block;
+    }
+
+    .mobile-menu-icon button {
+        background-color: transparent;
+        border: none;
+        font-size: 1.5rem;
+        color: #fff;
+    }
+
+    .mobile-menu {
+        display: none;
+        background-color: #333333;
+        position: absolute;
+        top: 70px;
+        right: 0;
+        width: 100%;
+        text-align: center;
+        overflow-y: auto;
+        transition: all 0.3s ease-in-out;
+    }
+
+    .mobile-menu.open {
+        display: block;
+    }
+}

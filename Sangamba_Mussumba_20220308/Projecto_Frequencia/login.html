@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8">
+  <link rel="stylesheet" href="css/style.css"/>
+  <link rel="stylesheet" href="css/header.css">
+  <link rel="stylesheet" href="css/login.css">
+  <link rel="stylesheet" type="text/css" href="css/footer.css">
+  <script src="js/validarFormulario.js"></script>
+  <title>MussumbaEduca</title>
+
+</head>
+<body>
+  
+    <header>
+        <nav class="nav-bar">
+            <div class="logo">
+                <h1>MussumbaEduca</h1>
+            </div>
+            <div class="nav-list">
+                <ul>
+
+
+                    <li class="nav-item"><a href="index.html" class="nav-link" >Home</a></li>
+                    <li class="nav-item"><a href="login.html" class="nav-link">Login</a></li>
+                    <li class="nav-item"><a href="cadastrar.html" class="nav-link">Cadastrar-se</a></li>
+                    <li class="nav-item"><a href="cursos.html" class="nav-link">cursos</a></li>
+                </ul>
+            </div>
+            <div class="search-box">
+        
+                <input type="text" placeholder="Pesquisar...">
+                <button type="submit">Buscar</button>
+            </div>
+            
+
+            <div class="mobile-menu-icon">
+                <button onclick="menuShow()"><img class="icon" src="img/menu_white_36dp.svg" alt=""></button>
+            </div>
+        </nav>
+        <div class="mobile-menu">
+            <ul>
+                <li class="nav-item"><a href="index.html" class="nav-link" >Home</a></li>
+                <li class="nav-item"><a href="login.html" class="nav-link">Login</a></li>
+                <li class="nav-item"><a href="cadastrar.html" class="nav-link">Cadastrar-se</a></li>
+                <li class="nav-item"><a href="cursos.html" class="nav-link">cursos</a></li>
+            </ul>
+        </div>
+
+ 
+
+    </header>
+    <section class="section-login">
+        <div class="login-container">
+            <h2>Login</h2>
+            <form id="loginForm" action="#" method="POST" onsubmit="return validarFormulario()"> 
+                <div class="form-group">
+                    <label for="username">Usuário:</label>
+                    <input type="text" id="username" name="username">
+                    <span id="usernameError" class="error"></span>
+                </div>
+                <div class="form-group">
+                    <label for="password">Senha:</label>
+                    <input type="password" id="password" name="password">
+                    <span id="passwordError" class="error"></span>
+                </div>
+                <button type="submit">Entrar</button>
+            </form>
+        </div>
+    </section>
+
+    <script>
+
+    </script>
+
+  
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>MussumbaEduca</h3>
+                <ul>
+                    <li><a href="#">Ensine na SMA</a></li>
+                    <li><a href="#">Obtenha o aplicativo</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Quem somos</h3>
+                <ul>
+                    <li><a href="#">Fale conosco</a></li>
+                    <li><a href="#">Carreiras</a></li>
+                    <li><a href="#">Blog</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Ajuda e suporte</h3>
+                <ul>
+                    <li><a href="#">Afiliado</a></li>
+                    <li><a href="#">Investidores</a></li>
+                    <li><a href="#">Termos</a></li>
+                    <li><a href="#">Política de privacidade</a></li>
+                    <li><a href="#">Mapa do site</a></li>
+                    <li><a href="#">Declaração de acessibilidade</a></li>
+                    <li><a href="#">Contacto: 940858723</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Mídias sociais</h3>
+                <div class="redes">
+    
+                <div><a href="#"><img src="img//facebook.png" alt="imagem do facebook"></a></div>
+                <div><a href="#"><img src="img/whatsapp.png" alt="imagem do whatsapp"></a></div>
+                <div><a href="#"><img src="img/instagram.png" alt="imagem do instagram"></a></div>
+                <div><a href="#"><img src="img/linkedin.png" alt="imagem do linkedin"></a></div>
+                
+            </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>© 2024 MussumbaEduca</p>
+        </div>
+    </footer>
+    
+</body>
+</html>

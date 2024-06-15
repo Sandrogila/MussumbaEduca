@@ -1,0 +1,216 @@
+
+section {
+    margin-top: 50px;
+    padding: 0 20px; /* Padding para dar espaçamento nas laterais */
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #24252a;
+}
+#section-cabecalho {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.section-cabecalho img {
+    width: 100%;
+    height: auto; /* Mantém a proporção da imagem */
+    display: block;
+}
+
+#section-text-cabecalho {
+    position: relative;
+    margin: 30px auto;
+    width: 80%; /* Ajuste de largura para telas menores */
+    max-width: 390px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+    border: 2px solid #ffffff5d;
+    padding: 20px;
+    background-color: #fff;
+    transition: background-color 0.3s; /* Transição suave de cor */
+}
+
+#section-text-cabecalho:hover,
+#section-text-cabecalho:focus {
+    background-color: #36383f2c; /* Cor de fundo quando passa ou foca */
+}
+
+#section-text-cabecalho h1,#section-text-cabecalho h3,
+#section-text-cabecalho + div h1 {
+    text-align: center;
+    color: #333;
+}
+
+#section-text-cabecalho p,
+#section-text-cabecalho + div p {
+    color: #666;
+}
+
+
+.section-banner1 {
+    margin-bottom: 30px;
+}
+
+.section-banner1 div {
+    display: inline-block;
+    margin-right: 10px;
+    position: relative;
+}
+
+.section-banner1 div:last-child {
+    margin-right: 0;
+}
+
+.section-banner1 img {
+    max-width: 100%;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.section-banner1 img:hover {
+    transform: scale(1.1);
+}
+
+.section-banner1 h3 {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: #3e3e3f;
+}
+
+.featured-themes {
+    display: flex;
+    flex-wrap: wrap;
+   background: #e7e6e683;
+    margin-bottom: 50px;
+    justify-content: space-around;
+}
+
+.category {
+    flex: 1 0 21%; /* Ajuste de largura para categorias */
+    margin: 10px;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    /*background-color:#24252afa */
+    background-color: #35343400;
+    box-sizing: border-box;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.541);
+    transition: background-color 0.8s; /* Transição suave de cor */
+    cursor: pointer;
+}
+.category:hover{
+    background-color: #1c1c2038;
+
+}
+.category img {
+    width: 100%;
+    height: 200px;
+    border-radius: 5px;
+}
+
+.category h2 {
+    color:#1c1c20;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.category ul {
+    list-style: none;
+    padding: 0;
+}
+
+.category li {
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.category a {
+    text-decoration: none;
+    color: #24252a;
+}
+
+.category a:hover {
+    color: rgb(43, 104, 128);;
+}
+
+
+/* Estilo dos Botões */
+.category ul li {
+    border: 1px solid var(--primary-color); /* Cor da borda conforme definido anteriormente */
+    border-radius: 20px; /* Bordas arredondadas */
+    padding: 8px 15px; /* Espaçamento interno */
+    margin-bottom: 5px; /* Espaçamento entre os itens */
+}
+
+
+
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    header .mae {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header img {
+        margin-left: 0;
+    }
+
+    .logo h1 {
+        padding-left: 0;
+        text-align: center;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    .search-box {
+        margin-right: 0;
+    }
+
+    #section-text-cabecalho {
+        width: 100%; /* Full width for smaller screens */
+        margin: 20px 0;
+    }
+
+    .category {
+        flex: 1 0 45%; /* Adjust width for smaller screens */
+        margin: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    nav ul {
+        padding: 0 10px;
+    }
+
+    .category {
+        flex: 1 0 100%; /* Largura total para telas muito pequenas */
+        margin: 10px 0; /* Espaçamento superior e inferior */
+    }
+    header img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .search-box input[type="text"] {
+        width: 150px;
+    }
+}

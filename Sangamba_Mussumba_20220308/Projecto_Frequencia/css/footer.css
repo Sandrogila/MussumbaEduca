@@ -1,0 +1,60 @@
+
+/* Footer Styles */
+footer {
+    /*background-color: #333;*/
+    background-color: #24252a;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.footer-section {
+    flex: 1;
+    padding: 10px;
+    min-width: 200px;
+}
+
+.footer-section h3 {
+    margin-top: 0;
+    font-size: 1.2em;
+}
+
+.footer-section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-section ul li a:hover {
+    text-decoration: underline;
+}
+
+.footer-section .redes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-section .redes div {
+    margin: 0 5px;
+}
+
+.footer-section .redes img {
+    width: 30px;
+    height: 30px;
+}
+

@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    
+}
+body{
+    background-color: #adadaf2d;
+}
+header {
+    background-color: #24252a;
+    box-shadow: 0px 2px 5px #464646;
+    padding: 1.5rem 6rem;
+}
+
+.nav-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap; /* Permite quebra de linha em telas menores */
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo h1 {
+    color: #fff;
+}
+
+.nav-list {
+    display: flex;
+    align-items: center;
+}
+
+.nav-list ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+.nav-item {
+    margin: 0 15px;
+}
+
+.nav-link {
+    text-decoration: none;
+    font-size: 1.15rem;
+    color: #fff;
+    font-weight: 400;
+}
+.nav-link:hover{
+    color:rgb(43, 104, 128);
+}
+
+.search-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem; /* Adicionado margem acima do elemento */
+}
+
+.search-box input[type="text"] {
+    padding: 8px;
+    border-radius: 5px;
+    border: none;
+}
+
+.search-box button {
+   /* background-color: #4CAF50; */
+   background-color: rgb(43, 104, 128);;
+    color: white;
+    padding: 8px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 5px;
+}
+
+.search-box button:hover {
+    background-color: rgb(30, 79, 99);;
+}
+
+.mobile-menu-icon {
+    display: none;
+}
+
+.mobile-menu {
+    display: none;
+    transition: all 0.3s ease-in-out;
+}
+
+@media screen and (max-width: 780px) {
+    header {
+        padding: 1.5rem 4rem;
+    }
+    .nav-item {
+        display: none;
+    }
+    .login-button {
+        display: none;
+    }
+    .mobile-menu-icon {
+        display: block;
+    }
+    .mobile-menu-icon button {
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+    }
+    .mobile-menu ul {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding-bottom: 1rem;
+    }
+    .mobile-menu .nav-item {
+        text-align: center;
+        display: block;
+        padding-top: 1.2rem;
+    }
+    .mobile-menu .login-button {
+        display: block;
+        padding: 1rem 2rem;
+    }
+    .mobile-menu .login-button button {
+        width: 100%;
+    }
+    .open {
+        display: block;
+    }
+
+    /* Ajuste para dispositivos menores */
+    .nav-bar {
+        flex-direction: column; /* Altera a direção do flexbox */
+        align-items: center; /* Alinha os itens ao centro */
+    }
+
+    .search-box {
+        order: -1; /* Define a ordem do elemento para aparecer antes */
+        margin-top: 0; /* Remove a margem superior */
+        margin-bottom: 1rem; /* Adiciona margem inferior */
+    }
+}
